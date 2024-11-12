@@ -1,0 +1,80 @@
+object Form_about: TForm_about
+  Left = 345
+  Height = 268
+  Top = 299
+  Width = 434
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = '关于...'
+  ClientHeight = 268
+  ClientWidth = 434
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 38
+    Height = 24
+    Top = 58
+    Width = 54
+    Caption = '作者：'
+  end
+  object Label2: TLabel
+    Left = 38
+    Height = 24
+    Top = 19
+    Width = 54
+    Caption = '系统：'
+  end
+  object BitBtn1: TBitBtn
+    Left = 288
+    Height = 46
+    Top = 192
+    Width = 113
+    Caption = '关闭(&C)'
+    ModalResult = 11
+    TabOrder = 0
+  end
+  object Label_version: TLabel
+    Left = 106
+    Height = 24
+    Top = 97
+    Width = 101
+    Caption = 'V2024.1.1.0'
+  end
+  object Label4: TLabel
+    Left = 38
+    Height = 24
+    Top = 97
+    Width = 54
+    Caption = '版本：'
+  end
+  object Label_name: TLabel
+    Left = 107
+    Height = 24
+    Top = 19
+    Width = 102
+    Caption = 'Label_name'
+  end
+  object Label_product: TLabel
+    Left = 107
+    Height = 24
+    Top = 58
+    Width = 123
+    Caption = 'Label_product'
+  end
+  object Label5: TLabel
+    Left = 40
+    Height = 24
+    Top = 136
+    Width = 54
+    Caption = '版权：'
+  end
+  object Label6: TLabel
+    Left = 104
+    Height = 24
+    Top = 136
+    Width = 93
+    Caption = 'GPL，LGPL'
+  end
+end

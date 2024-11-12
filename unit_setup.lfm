@@ -1,0 +1,56 @@
+object Form_setup: TForm_setup
+  Left = 375
+  Height = 509
+  Top = 246
+  Width = 780
+  Caption = 'Form_setup'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 509
+    Top = 0
+    Width = 780
+    Align = alClient
+    ClientHeight = 509
+    ClientWidth = 780
+    TabOrder = 0
+    object Label6: TLabel
+      Left = 85
+      Height = 24
+      Top = 288
+      Width = 70
+      Caption = '本机IP：'
+      ParentColor = False
+    end
+    object Edit_localhost: TEdit
+      Left = 170
+      Height = 32
+      Hint = '|显示本机IP地址。'
+      Top = 285
+      Width = 172
+      ParentShowHint = False
+      ShowHint = True
+      TabStop = False
+      TabOrder = 0
+    end
+    object Bevel1: TBevel
+      Left = 19
+      Height = 4
+      Top = 259
+      Width = 737
+      Anchors = [akTop, akLeft, akRight]
+    end
+    object Label1: TLabel
+      Left = 56
+      Height = 24
+      Top = 40
+      Width = 72
+      Caption = '设置页面'
+      ParentColor = False
+    end
+  end
+end

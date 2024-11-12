@@ -1,0 +1,29 @@
+object Form_other: TForm_other
+  Left = 408
+  Height = 540
+  Top = 184
+  Width = 746
+  Caption = 'Form_other'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 144
+  LCLVersion = '3.4.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 540
+    Top = 0
+    Width = 746
+    Align = alClient
+    ClientHeight = 540
+    ClientWidth = 746
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 48
+      Height = 24
+      Top = 40
+      Width = 72
+      Caption = '操作界面'
+      ParentColor = False
+    end
+  end
+end

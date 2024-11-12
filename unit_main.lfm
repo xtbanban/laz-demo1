@@ -1,0 +1,42 @@
+object Form_main: TForm_main
+  Left = 608
+  Height = 484
+  Top = 123
+  Width = 781
+  Caption = 'Form_main'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 144
+  LCLVersion = '3.4.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 484
+    Top = 0
+    Width = 781
+    Align = alClient
+    ClientHeight = 484
+    ClientWidth = 781
+    TabOrder = 0
+    object StaticText1: TStaticText
+      Left = 67
+      Height = 38
+      Top = 38
+      Width = 240
+      Caption = '欢迎使用本系统'
+      Color = clDefault
+      Font.Color = clMaroon
+      Font.Height = -30
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object Bevel1: TBevel
+      Left = 29
+      Height = 5
+      Top = 112
+      Width = 728
+      Anchors = [akTop, akLeft, akRight]
+    end
+  end
+end

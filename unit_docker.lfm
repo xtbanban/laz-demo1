@@ -1,0 +1,315 @@
+object Form_docker: TForm_docker
+  Left = 598
+  Height = 600
+  Top = 136
+  Width = 864
+  Caption = 'Form_docker'
+  ClientHeight = 0
+  ClientWidth = 0
+  Constraints.MinHeight = 600
+  Constraints.MinWidth = 864
+  DesignTimePPI = 144
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  Position = poDesktopCenter
+  LCLVersion = '3.4.0.0'
+  object Panel_top: TPanel
+    Left = 0
+    Height = 86
+    Top = 0
+    Width = 864
+    Align = alTop
+    ClientHeight = 86
+    ClientWidth = 864
+    Color = clSkyBlue
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object SpeedButton_main: TSpeedButton
+      Left = 29
+      Height = 50
+      Top = 19
+      Width = 106
+      Action = Action_main
+      AllowAllUp = True
+      Images = ImageList1
+      ImageIndex = 0
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object SpeedButton_setup: TSpeedButton
+      Left = 278
+      Height = 50
+      Top = 19
+      Width = 106
+      Action = Action_setup
+      Images = ImageList1
+      ImageIndex = 2
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object SpeedButton_quit: TSpeedButton
+      Left = 729
+      Height = 50
+      Top = 19
+      Width = 106
+      Action = Action_quit
+      Anchors = [akTop, akRight]
+      Images = ImageList1
+      ImageIndex = 4
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object SpeedButton_help: TSpeedButton
+      Left = 403
+      Height = 50
+      Top = 19
+      Width = 106
+      Action = Action_help
+      Images = ImageList1
+      ImageIndex = 3
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object SpeedButton_scan: TSpeedButton
+      Left = 154
+      Height = 50
+      Top = 19
+      Width = 106
+      Action = Action_other
+      Images = ImageList1
+      ImageIndex = 1
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object Shape1: TShape
+      Left = 67
+      Height = 18
+      Top = 70
+      Width = 35
+      Brush.Color = clBtnFace
+      Shape = stTriangle
+    end
+    object Shape2: TShape
+      Left = 192
+      Height = 18
+      Top = 70
+      Width = 35
+      Brush.Color = clBtnFace
+      Shape = stTriangle
+    end
+    object Shape3: TShape
+      Left = 317
+      Height = 18
+      Top = 71
+      Width = 35
+      Brush.Color = clBtnFace
+      Shape = stTriangle
+      Visible = False
+    end
+    object Shape4: TShape
+      Left = 442
+      Height = 18
+      Top = 70
+      Width = 35
+      Brush.Color = clBtnFace
+      Shape = stTriangle
+      Visible = False
+    end
+  end
+  object Panel_client: TPanel
+    Left = 0
+    Height = 480
+    Top = 86
+    Width = 864
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 34
+    Top = 566
+    Width = 864
+    Panels = <    
+      item
+        Alignment = taCenter
+        Text = '提示'
+        Width = 60
+      end    
+      item
+        Width = 720
+      end    
+      item
+        Width = 60
+      end>
+    SimplePanel = False
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    Left = 408
+    Top = 128
+    object Action_main: TAction
+      Caption = '主页'
+      Hint = '|显示主页窗口。'
+      ImageIndex = 0
+      OnExecute = Action_mainExecute
+    end
+    object Action_other: TAction
+      Caption = '其他'
+      Hint = '|显示其他页面。'
+      ImageIndex = 1
+      OnExecute = Action_otherExecute
+    end
+    object Action_setup: TAction
+      Caption = '设置'
+      Hint = '|显示设置页面。'
+      ImageIndex = 2
+      OnExecute = Action_setupExecute
+    end
+    object Action_help: TAction
+      Caption = '帮助'
+      Hint = '|显示帮助页面。'
+      ImageIndex = 3
+      OnExecute = Action_helpExecute
+    end
+    object Action_about: TAction
+      Caption = '关于...'
+      Hint = '|显示关于对话框。'
+      OnExecute = Action_aboutExecute
+    end
+    object Action_quit: TAction
+      Caption = '退出'
+      Hint = '|退出系统。'
+      ImageIndex = 4
+      OnExecute = Action_quitExecute
+    end
+    object Action_hideshow: TAction
+      Caption = '隐藏'
+      Hint = '|隐藏或显示程序界面。'
+      OnExecute = Action_hideshowExecute
+    end
+  end
+  object ImageList1: TImageList
+    Left = 408
+    Top = 344
+    Bitmap = {
+      4C7A050000001000000010000000750800000000000078DACD977B50537716C7
+      0D0904122101240879090962501E75BBE18D04A6D6A9EE2842557C00425590D7
+      FA2C3E1644A42A628565B1AD88D627A8ABBC165A2D3E708A2E5AB55A5FBB0818
+      A943A1CC5A74A10C117E7B4E766FF62684007FECCCFE66BE33BF7BCEF9FCEEEF
+      9E73EEFD251326181F66666656AE32F94EB99BDB4E9C4F18C76030182C5F5FBF
+      DA1B77BE2728A5D2B796C964B2C68A7BFBF89CBCDEF41D79FD966885736F6F9F
+      93E81B0D562814857597AFEA584A68439F29562693659EADA81EC6523A5B594D
+      30C6182B1489920A4A8F0FB6FF4A34A654083122B13899CEF2F87CEFADB97B86
+      9A7B87C858B465D79E41BEADAD0FC50B1C1DC34ACFD790B1F225E7AA0832FF2B
+      BEB1B99D64E4EC26EBB6656A8573B499E28BCFD5BCBDF77A48838A494CEE66B3
+      D902CACFE1721D639352BA29FF9FCE540DD27907816358EEE96A52DBF956ABD9
+      111F3E36AC0FDA28FFAE93950499FF17DE86C7F74EDF53406A3A06C85F7E1A40
+      FE09CBDC9C4517DAD08731E9BB0B88B50DCF5BAFFFC492358A199E651E9E5EE5
+      EE0A45F9348FE927E8421BFA3066B293D3EA51DE5F86B5B5B5DCDEDE7E8E9D9D
+      DDFB5C2E573E96770FBE1366229168CDA2A8A8BF7F565444EA2A2B495D5515C1
+      39D89A4542612284308DB1E6E6E6BCC080806FEAEBEA08E9EB33AA6F6A6B09C4
+      D463ACE17DD1DEF2F8F1882CA5568881D8CBF47D0885C2B5A6EE6B288C45864A
+      D7A20511CF4867E700E9ECD2EA9F6DCF07D29392486646C6A0FAEE3D9DFDBFEA
+      1C00A60559EB8913A77DB16F1F21ED3FEAD476F3AFE468412179F5E831C9CFDA
+      410A7272C8EB274FF5620EE5E713A8D1348183C3DC8B65654679EAFA59E30DB2
+      292585B4DFBEADB35D3C5D461C80057EDEC5B272933C5E6F4E49252F6ED17860
+      1C0582797C1E4F51B2FF53A37C0FEC797F76B656AFB036B49892FCFD0459682A
+      C6B2A8A836D2D2AAA1F4E6C1434D6A4202D99E9636D87AAD4143F7515A1A19D9
+      867D8A05904A2469D78E1E23E4FB076312C63A3B39A5D2FA8719E2EFDFA0FEFA
+      D2A8ACFAE22512E4EBD700B7D6EB632B4B4B3B58E37AC397C74764D107EC7516
+      8BC51FE1FD6149C4E2DF2F8F58A82ECDFD84D41F3E42EA4B8F90D25DB964D982
+      0835EC390DCFD6319CBF663C1B9BE98E0E820550DFF936D6D69EB8FC78CE704B
+      4BCBC970D6E5C95C5DF360EE34560ECE79B6542ACD58BF2EFDB5FAD953A26EF9
+      1BD90073894492813E532CF4534454E4C2965B37AE1332D0ABA7A6C606121519
+      D90A310B0D39F83EC9828202AF9C2D3B45DEFEFA7A184B69B0FF0D39577E8A04
+      06065C99080CC587A942BFFDA5BB432FB6BBA39DD4565F005590EE9FDAF57CBF
+      FCDC41C2C3C21A293E6E45741B79F37280527DED794DE6960DE4E6E54A0D0AE7
+      F5B57FD6D06356C62C6BD3F1CB17AB875EB5105457CB1D92B57503A1AE29A10D
+      7DD4757C4CB4DA185F7DE60869BA52358C475BF599D251F9AAF25272EB6AF530
+      1E6D55658747E53B9B6F93EC6D1B87F1D9DB37697DC6F8D8651F3E1FEA7AA8A1
+      F455F9E79A9DDB3792EFAE566A50B81EDAE8312B972FD2E56F7658F0CD9E2717
+      C990BA41A78EBBD5E442E95EAD3AEE56E9F930F63D55F04D8A876FB0BB2A38A0
+      B1A2348F689E5FD38BA50B7D1547F24848A0EFB75C2E67AAE199E9EC3479C9B2
+      A8DFBDB8F3F5D161EC9DAF8E92E8C8792F040287685367299CF61C9729D2AC8C
+      B484DEF6DB15E44710CEA51271168BC91CF3EF702EC74A3CD54D5E2893B9165A
+      59598AC7CAF1AD58DC247F61DC8538CF93F7D72B6FDC5BAF6C3C1FEB79126CB1
+      E0E3986257F93A47BFCA09E9ECCC0A6E2F5DA428DE182A49DDAC92A67DB9C4A3
+      B83B3BA41D7D10B3D4185B30DF2DBB7F8FAA6FE32C498A25CB8CC506A964B67E
+      C12E7C3F9CA36D6BF894E481BDAA3E8CA5B3094AE76864674FB50BC66B77078E
+      B4654BC0A3B77961FD43FBC2FA9B33FC1FB94DB292A2EF8369F641B806B50F6B
+      36938BFBFA58254DA1D6BB9A34B3EED2EA776A6C2117F61C73EE95C4993568A3
+      FCB08F146430576BFC84715D3B82DB717FE863993118B07E6FB89B6D2015FFBE
+      BB5D08ECA5CF82C9D07E833116F3817986DC9EC25CD19F4725B755C23ABAEFF5
+      FA5992E48ECCA0567A0CE4F420D605EBB339549A662CA7015378BF3D1EEDF119
+      ECA73F11EA47F7615DA0BE8D289C1BE34F2CF5F8E2D916FFC7F3A74F9A63E87B
+      5764AD480F167F847D02FB3F38128F32D533A941A238EC172A7FF47164B1A208
+      656887DC30E3954E4BCCE02DC21AF5EC9AA5573F6A40ED7876562C9EA11DF299
+      044C17D782698ED74901C2A5D83FD81B06392EC63C1BD4C61F627BA1EE2BE8F6
+      A288A9D8BFBDB08F64EA5936854A92D6858893A89A436F27620CC4E61ACB05EE
+      039F85F6FEA4416D52605ED4B923580D3DF7B3E17D0D07E603730A7539F19FFA
+      DE843E39BD3640140FFD3AD1140BFDC9DCF09ED3AAA739DE774FAF9297EC9C2F
+      DA8A3AB3C6AD046CF7D2C32727983319467FBFBB4E628B7ED8E1D5F424C7FB7E
+      8CFFA4C5D6964CCE81C5D27C942D87C959152C58F2EC139FFB0FB2BC9A3056EF
+      BF0BDFDCF1E5BE99AD9F2F773960415B9FE275BF49580CD6B178D9818EFC99AD
+      C8E8DED78D1EB5A73E921F32DC9321AFFD8D053D03CF730819BC9E3383A7EAFC
+      F4372F6D60BF63E1FFFD8D6472FE51F8EECB0F3CF9AAB255F2E3B911E23F18CB
+      C9483C8EBC2849E699D56EC7E059DA42DD6D94E3E5C31536BE980752E23720B5
+      B7108C97470659509F5CC0161A8B495139C6AF0D758C375A6F07B633B2ADBB7D
+      7E98EBC50F9F30CE01B90B837E785812E37AE0D00A973F8E9707A608D802E514
+      AE47DF41658FDC41BFA74C8D29F66C515FB1B2C747CC5168BF33B1AE05B7B6CD
+      68E05898B1476321C612630FC5B81450B6896C338BC68FA75F6ADA3AE31AAC2D
+      34715F678CC158368B6141F7C11AEC632B6545F82CF06C85981FC8B1482EB014
+      CD8539DAD07738D6B5C8D43E952E5C4F78478A5FEC7DE729D4A71F05357A0A5C
+      31F8BC0CE3FF05FC725EFB
+    }
+  end
+  object MainMenu1: TMainMenu
+    Images = ImageList1
+    Left = 408
+    Top = 232
+    object MenuItem1: TMenuItem
+      Caption = '文件(&F)'
+      object MenuItem2: TMenuItem
+        Action = Action_main
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem5: TMenuItem
+        Action = Action_quit
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = '页面(&W)'
+      object MenuItem4: TMenuItem
+        Action = Action_other
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem10: TMenuItem
+        Action = Action_setup
+      end
+    end
+    object MenuItem7: TMenuItem
+      Caption = '帮助(&H)'
+      object MenuItem8: TMenuItem
+        Action = Action_help
+      end
+      object MenuItem9: TMenuItem
+        Action = Action_about
+      end
+    end
+  end
+  object ApplicationProperties1: TApplicationProperties
+    ShowHint = False
+    OnHint = ApplicationProperties1Hint
+    Left = 128
+    Top = 128
+  end
+end
