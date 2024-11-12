@@ -5,6 +5,15 @@
 
 #### 软件架构
 未使用其他特殊控件包。
+文件目录结构：（代码 *.pas  窗体 *.lfm）
+ - project1.lpi
+ - unit_dm.pas     模式窗口文件
+ - unit_docker.pas 主窗口
+ - unit_help.pas   帮助
+ - unit_main.pas   主页
+ - unit_other.pas  其他操作
+ - unit_setup.pas  设置
+ - unit_about.pas  关于
 
 
 #### 使用说明
