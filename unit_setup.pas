@@ -43,7 +43,7 @@ end;
 
 procedure TForm_setup.FormCreate(Sender: TObject);
 begin
-  Edit_localhost.Text:= DM.GetLocalIPAddress;
+  Edit_localhost.Text := DM.GetLocalIPAddress; // 调用取得ip函数
 end;
 
 

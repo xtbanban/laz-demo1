@@ -1,29 +1,93 @@
 object Form_other: TForm_other
   Left = 408
-  Height = 540
+  Height = 450
   Top = 184
-  Width = 746
+  Width = 622
   Caption = 'Form_other'
-  ClientHeight = 0
-  ClientWidth = 0
-  DesignTimePPI = 144
+  ClientHeight = 450
+  ClientWidth = 622
+  DesignTimePPI = 120
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel
     Left = 0
-    Height = 540
+    Height = 450
     Top = 0
-    Width = 746
+    Width = 622
     Align = alClient
-    ClientHeight = 540
-    ClientWidth = 746
+    ClientHeight = 450
+    ClientWidth = 622
     TabOrder = 0
     object Label1: TLabel
-      Left = 48
-      Height = 24
-      Top = 40
-      Width = 72
+      Left = 40
+      Height = 20
+      Top = 33
+      Width = 60
       Caption = '操作界面'
       ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 91
+      Height = 20
+      Top = 84
+      Width = 54
+      Caption = '数字1：'
+    end
+    object Edit1: TEdit
+      Left = 168
+      Height = 28
+      Top = 80
+      Width = 100
+      TabOrder = 0
+      Text = '1'
+    end
+    object Label3: TLabel
+      Left = 91
+      Height = 20
+      Top = 134
+      Width = 54
+      Caption = '数字2：'
+    end
+    object Edit2: TEdit
+      Left = 167
+      Height = 28
+      Top = 131
+      Width = 100
+      TabOrder = 1
+      Text = '2'
+    end
+    object BitBtn1: TBitBtn
+      Left = 312
+      Height = 38
+      Hint = '|计算数字12的合计数。'
+      Top = 128
+      Width = 94
+      Caption = '合计'
+      OnClick = BitBtn1Click
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+    end
+    object Bevel1: TBevel
+      Left = 41
+      Height = 10
+      Top = 182
+      Width = 555
+      Anchors = [akTop, akLeft, akRight]
+      Shape = bsTopLine
+    end
+    object Label4: TLabel
+      Left = 91
+      Height = 20
+      Top = 200
+      Width = 45
+      Caption = '合计：'
+    end
+    object Edit3: TEdit
+      Left = 168
+      Height = 28
+      Top = 200
+      Width = 100
+      TabOrder = 3
     end
   end
 end

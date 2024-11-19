@@ -1,14 +1,14 @@
 object Form_docker: TForm_docker
-  Left = 598
-  Height = 600
-  Top = 136
-  Width = 864
+  Left = 555
+  Height = 500
+  Top = 294
+  Width = 720
   Caption = 'Form_docker'
-  ClientHeight = 0
-  ClientWidth = 0
-  Constraints.MinHeight = 600
-  Constraints.MinWidth = 864
-  DesignTimePPI = 144
+  ClientHeight = 500
+  ClientWidth = 720
+  Constraints.MinHeight = 500
+  Constraints.MinWidth = 720
+  DesignTimePPI = 120
   Menu = MainMenu1
   OnClose = FormClose
   OnCreate = FormCreate
@@ -18,21 +18,21 @@ object Form_docker: TForm_docker
   LCLVersion = '3.4.0.0'
   object Panel_top: TPanel
     Left = 0
-    Height = 86
+    Height = 72
     Top = 0
-    Width = 864
+    Width = 720
     Align = alTop
-    ClientHeight = 86
-    ClientWidth = 864
+    ClientHeight = 72
+    ClientWidth = 720
     Color = clSkyBlue
     ParentBackground = False
     ParentColor = False
     TabOrder = 0
     object SpeedButton_main: TSpeedButton
-      Left = 29
-      Height = 50
-      Top = 19
-      Width = 106
+      Left = 24
+      Height = 42
+      Top = 16
+      Width = 88
       Action = Action_main
       AllowAllUp = True
       Images = ImageList1
@@ -41,10 +41,10 @@ object Form_docker: TForm_docker
       ParentShowHint = False
     end
     object SpeedButton_setup: TSpeedButton
-      Left = 278
-      Height = 50
-      Top = 19
-      Width = 106
+      Left = 232
+      Height = 42
+      Top = 16
+      Width = 88
       Action = Action_setup
       Images = ImageList1
       ImageIndex = 2
@@ -52,10 +52,10 @@ object Form_docker: TForm_docker
       ParentShowHint = False
     end
     object SpeedButton_quit: TSpeedButton
-      Left = 729
-      Height = 50
-      Top = 19
-      Width = 106
+      Left = 608
+      Height = 42
+      Top = 16
+      Width = 88
       Action = Action_quit
       Anchors = [akTop, akRight]
       Images = ImageList1
@@ -64,10 +64,10 @@ object Form_docker: TForm_docker
       ParentShowHint = False
     end
     object SpeedButton_help: TSpeedButton
-      Left = 403
-      Height = 50
-      Top = 19
-      Width = 106
+      Left = 336
+      Height = 42
+      Top = 16
+      Width = 88
       Action = Action_help
       Images = ImageList1
       ImageIndex = 3
@@ -75,10 +75,10 @@ object Form_docker: TForm_docker
       ParentShowHint = False
     end
     object SpeedButton_scan: TSpeedButton
-      Left = 154
-      Height = 50
-      Top = 19
-      Width = 106
+      Left = 128
+      Height = 42
+      Top = 16
+      Width = 88
       Action = Action_other
       Images = ImageList1
       ImageIndex = 1
@@ -86,35 +86,35 @@ object Form_docker: TForm_docker
       ParentShowHint = False
     end
     object Shape1: TShape
-      Left = 67
-      Height = 18
-      Top = 70
-      Width = 35
+      Left = 56
+      Height = 15
+      Top = 58
+      Width = 29
       Brush.Color = clBtnFace
       Shape = stTriangle
     end
     object Shape2: TShape
-      Left = 192
-      Height = 18
-      Top = 70
-      Width = 35
+      Left = 160
+      Height = 15
+      Top = 58
+      Width = 29
       Brush.Color = clBtnFace
       Shape = stTriangle
     end
     object Shape3: TShape
-      Left = 317
-      Height = 18
-      Top = 71
-      Width = 35
+      Left = 264
+      Height = 15
+      Top = 59
+      Width = 29
       Brush.Color = clBtnFace
       Shape = stTriangle
       Visible = False
     end
     object Shape4: TShape
-      Left = 442
-      Height = 18
-      Top = 70
-      Width = 35
+      Left = 368
+      Height = 15
+      Top = 58
+      Width = 29
       Brush.Color = clBtnFace
       Shape = stTriangle
       Visible = False
@@ -122,36 +122,36 @@ object Form_docker: TForm_docker
   end
   object Panel_client: TPanel
     Left = 0
-    Height = 480
-    Top = 86
-    Width = 864
+    Height = 399
+    Top = 72
+    Width = 720
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 34
-    Top = 566
-    Width = 864
+    Height = 29
+    Top = 471
+    Width = 720
     Panels = <    
       item
         Alignment = taCenter
         Text = '提示'
-        Width = 60
+        Width = 50
       end    
       item
-        Width = 720
+        Width = 600
       end    
       item
-        Width = 60
+        Width = 50
       end>
     SimplePanel = False
   end
   object ActionList1: TActionList
     Images = ImageList1
-    Left = 408
-    Top = 128
+    Left = 340
+    Top = 107
     object Action_main: TAction
       Caption = '主页'
       Hint = '|显示主页窗口。'
@@ -194,8 +194,8 @@ object Form_docker: TForm_docker
     end
   end
   object ImageList1: TImageList
-    Left = 408
-    Top = 344
+    Left = 340
+    Top = 287
     Bitmap = {
       4C7A050000001000000010000000750800000000000078DACD977B50537716C7
       0D0904122101240879090962501E75BBE18D04A6D6A9EE2842557C00425590D7
@@ -270,8 +270,8 @@ object Form_docker: TForm_docker
   end
   object MainMenu1: TMainMenu
     Images = ImageList1
-    Left = 408
-    Top = 232
+    Left = 340
+    Top = 193
     object MenuItem1: TMenuItem
       Caption = '文件(&F)'
       object MenuItem2: TMenuItem
@@ -309,7 +309,7 @@ object Form_docker: TForm_docker
   object ApplicationProperties1: TApplicationProperties
     ShowHint = False
     OnHint = ApplicationProperties1Hint
-    Left = 128
-    Top = 128
+    Left = 107
+    Top = 107
   end
 end

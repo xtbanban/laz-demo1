@@ -42,6 +42,9 @@ implementation
 
   { TForm_about }
 
+uses
+  Unit_DM;
+
 procedure TForm_about.FormCreate(Sender: TObject);
 var
   FileVerInfo: TFileVersionInfo;
@@ -53,6 +56,8 @@ begin
     // ['LegalCopyright']['OriginalFilename']['ProductName']['ProductVersion']
     Label_product.Caption := FileVerInfo.VersionStrings.Values['ProductName'];
     Label_version.Caption := FileVerInfo.VersionStrings.Values['FileVersion'];
+
+    DM.S_version :=Label_product.Caption; // 赋值全局变量：版本号码
   finally
     FileVerInfo.Free;
   end;

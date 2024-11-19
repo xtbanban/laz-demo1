@@ -20,6 +20,8 @@ type
   TDM = class(TDataModule)
   private
   public
+    S_version: string; // 版本号码全局变量
+
     function GetLocalIPAddress: string;
   end;
 
@@ -30,9 +32,9 @@ implementation
 
 {$R *.lfm}
 
-  { TDM }
+{ TDM }
 
-// 取得本机ip地址
+// 取得本机ip地址函数
 function TDM.GetLocalIPAddress: string;
 var
   wsaData: TWSAData;

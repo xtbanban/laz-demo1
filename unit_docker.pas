@@ -65,9 +65,9 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormResize(Sender: TObject);
   private
-    TF_Form: TForm;                     // 上次显示的窗口
+    TF_Form: TForm;                     // 保存上次显示的窗口
 
-    procedure HideShape;                // 隐藏三角显示
+    procedure HideShape;                // 隐藏切换按键下面的三角显示
   public
     procedure ShowPanel(AForm: TForm; APanel: TPanel);
     procedure ShowMyHint(MyControal: Tcontrol; myfalsh: boolean = True);
@@ -95,6 +95,10 @@ begin
   Shape4.Visible := False;
 end;
 
+// 切换窗口显示主函数
+// 原理：切换主窗口的 Panel 的 parent（父子组件）属性，达到切换显示功能
+// 切换后，查找名为：NoShowMyself 的事件，运行之
+// 最后隐藏切换按键下面的三件显示，和停止显示闪烁提示框
 procedure TForm_docker.ShowPanel(AForm: TForm; APanel: TPanel);
 var
   I: integer;
@@ -131,16 +135,21 @@ begin
   StopMyHint;
 end;
 
+// 显示闪烁提示框函数
 procedure TForm_docker.ShowMyHint(MyControal: Tcontrol; myfalsh: boolean = True);
 begin
   AFrameControl.FrameControl(MyControal, myfalsh);
 end;
 
+// 提示显示闪烁提示框函数
 procedure TForm_docker.StopMyHint;
 begin
   AFrameControl.StopFramed;
 end;
 
+// 将应用提示显示在StatusBar1,控件设置如下：
+// Hint := '(冒泡显示内容)|显示在StatusBar1的内容';
+// ShowHint := True;
 procedure TForm_docker.ApplicationProperties1Hint(Sender: TObject);
 begin
   StatusBar1.Panels.Items[1].Text := Application.Hint;
@@ -189,8 +198,11 @@ end;
 procedure TForm_docker.Action_aboutExecute(Sender: TObject);
 begin
   // 关于...
-  Form_about.Label_name.Caption := ApplicationProperties1.Title;
-  Form_about.ShowModal;
+  try
+    Form_about.Label_name.Caption := ApplicationProperties1.Title;
+    Form_about.ShowModal;
+  finally
+  end;
 end;
 
 procedure TForm_docker.Action_hideshowExecute(Sender: TObject);
@@ -205,7 +217,6 @@ end;
 procedure TForm_docker.Action_mainExecute(Sender: TObject);
 begin
   // 主页
-  SpeedButton_main.Down := True;
   Self.Caption := C_title + ' - (主页)';
   Application.Title := Self.Caption;
   ShowPanel(Form_main, Form_main.Panel1);
@@ -215,17 +226,16 @@ end;
 procedure TForm_docker.Action_otherExecute(Sender: TObject);
 begin
   // do...
-  SpeedButton_scan.Down := True;
   Self.Caption := C_title + ' - (其他)';
   Application.Title := Self.Caption;
   ShowPanel(Form_other, Form_other.Panel1);
   Shape2.Visible := True;
+  Form_other.ShowMyself; // 运行 ShowMyself 过程
 end;
 
 procedure TForm_docker.Action_setupExecute(Sender: TObject);
 begin
   // 设置
-  SpeedButton_scan.Down := True;
   Self.Caption := C_title + ' - (设置)';
   Application.Title := Self.Caption;
   ShowPanel(Form_setup, Form_setup.Panel1);
@@ -234,12 +244,11 @@ end;
 
 procedure TForm_docker.Action_helpExecute(Sender: TObject);
 begin
-    // 帮助
-    SpeedButton_help.Down := True;
-    Self.Caption := C_title + ' - (帮助)';
-    Application.Title := Self.Caption;
-    ShowPanel(Form_help, Form_help.Panel1);
-    Shape4.Visible := True;
+  // 帮助
+  Self.Caption := C_title + ' - (帮助)';
+  Application.Title := Self.Caption;
+  ShowPanel(Form_help, Form_help.Panel1);
+  Shape4.Visible := True;
 end;
 
 end.
