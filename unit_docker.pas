@@ -103,7 +103,7 @@ procedure TForm_docker.ShowPanel(AForm: TForm; APanel: TPanel);
 var
   I: integer;
   AControl: TControl;
-  m: TMethod;
+  Proc: TNotifyEvent;
 begin
   APanel.Parent := Panel_client;
   APanel.Left := 0;
@@ -116,22 +116,15 @@ begin
     begin
       if AControl.Visible then
       begin
-        with (TF_Form as TForm) do
-        begin
-          m.code := MethodAddress('NoShowMyself');
-          if (m.code <> nil) then
-          begin
-            m.Data := Pointer(nil); // 可不用
-            TNotifyEvent(m)(nil);
-          end;
-        end;
+        AControl.Visible := False;
+        TMethod(Proc).Code := (TF_Form as TForm).MethodAddress('NoShowMyself');
+        TMethod(Proc).Data := Pointer(TF_Form as TForm);
+        if Assigned(Proc) then Proc(nil);
       end;
-      AControl.Visible := False;
     end;
   end;
   TF_Form := AForm;
   HideShape;
-  // 停止显示闪烁提示框
   StopMyHint;
 end;
 

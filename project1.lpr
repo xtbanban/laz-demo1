@@ -28,7 +28,7 @@ begin
   RequireDerivedFormResource := True;
   Application.Initialize;
 
-  // 所有窗口都预先建立，请DM和docker
+  // 所有窗口都预先建立，请先建立DM和docker
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TForm_docker, Form_docker);
 

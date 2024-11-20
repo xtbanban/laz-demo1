@@ -4,8 +4,8 @@ object Form_help: TForm_help
   Top = 318
   Width = 810
   Caption = 'Form_help'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 481
+  ClientWidth = 810
   DesignTimePPI = 144
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel

@@ -53,12 +53,12 @@ end;
 
 procedure TForm_other.NoShowMyself;
 begin
-
+  Edit3.Text := ''; // 退出时清合计数
 end;
 
 procedure TForm_other.BitBtn1Click(Sender: TObject);
 var
-  k1, k2, k3: integer;
+  k1, k2: integer;
 begin
   k1 := StrToIntDef(Edit1.Text, 0);
   k2 := StrToIntDef(Edit2.Text, 0);
