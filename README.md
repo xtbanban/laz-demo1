@@ -2,7 +2,7 @@
 
 #### 介绍
 
-使用 Lazarus 设计的通用程序界面。
+使用 Lazarus 设计的通用程序界面，可以参考本例设计自己的程序。
 
 _Lazarus 是兼容 Delphi 的跨平台集成开发工具（IDE），使用 Free Pascal 语言，有丰富的内置组件，也可在线安装第三方组件，组件面板神似 Delphi，除了 Win32，还可以使用 GTK、Qt、AWTK 等跨平台 GUI 框架，对于一个 Delphi 程序员来说，可以轻松上手 Lazarus，不同的是他是开源的！ (GPL/LGPL)_
 
@@ -25,7 +25,7 @@ _Lazarus 是兼容 Delphi 的跨平台集成开发工具（IDE），使用 Free 
 
 - project1.lpi // 项目文件
 - unit_dm.pas // 数据模式文件
-- unit_docker.pas // 主窗口
+- unit_docker.pas // 主窗口（主要功能）
 - unit_help.pas // 帮助
 - unit_main.pas // 主页
 - unit_other.pas // 操作
