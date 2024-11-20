@@ -8,11 +8,11 @@ _Lazarus 是兼容 Delphi 的跨平台集成开发工具（IDE），使用 Free 
 
 ![程序主界面](./pic/01.png)
 
-- 主界面上方显示 4 个按键，可以显示不同的窗口
-- 菜单与按键的功能一致
+- 本程序设计了 4 个页面窗口
+- 可以用按键和菜单切换显示不同的页面窗口
 - 每个窗口的代码在一个 unit 文件中，互不干扰
 - 内置了一个闪烁显示提示的控件源码
-- 详细说明请见代码
+- 详细说明请见代码内说明
 
 ![其他界面](./pic/02.png)
 ![设置界面](./pic/03.png)
@@ -21,22 +21,21 @@ _Lazarus 是兼容 Delphi 的跨平台集成开发工具（IDE），使用 Free 
 
 #### 软件架构
 
-(未使用其他特殊控件包)
 文件目录结构：（代码 _.pas 窗体 _.lfm）
 
-- project1.lpi
-- unit_dm.pas 模式窗口文件
-- unit_docker.pas 主窗口
-- unit_help.pas 帮助
-- unit_main.pas 主页
-- unit_other.pas 其他操作
-- unit_setup.pas 设置
-- unit_about.pas 关于
+- project1.lpi // 项目文件
+- unit_dm.pas // 数据模式文件
+- unit_docker.pas // 主窗口
+- unit_help.pas // 帮助
+- unit_main.pas // 主页
+- unit_other.pas // 操作
+- unit_setup.pas // 设置
+- unit_about.pas // 关于
 
 #### 使用说明
 
-1.  下载安装 lazarus
-2.  下载本程序
+1.  下载安装 lazarus (V3.4 FPC_3.2.2)
+2.  下载本程序 (未使用其他特殊控件包)
 3.  打开本项目，编译，运行。
 
 #### 联系作者
