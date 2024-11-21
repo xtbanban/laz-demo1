@@ -14,9 +14,7 @@ type
 
   TForm_setup = class(TForm)
     Bevel1: TBevel;
-    CheckBox1: TCheckBox;
     Edit_localhost: TEdit;
-    Label2: TLabel;
     Label6: TLabel;
     Label1: TLabel;
     Panel1: TPanel;
@@ -40,8 +38,7 @@ uses
 
 procedure TForm_setup.NoShowMyself(Sender: TObject);
 begin
-  //CheckBox1.Checked:= False;
-  Label2.Caption:='NoShowMyself';
+
 end;
 
 procedure TForm_setup.FormCreate(Sender: TObject);

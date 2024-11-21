@@ -18,9 +18,8 @@
         <ComponentName Value="Form_docker"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="71"/>
+        <TopLine Value="89"/>
         <CursorPos X="22" Y="164"/>
         <UsageCount Value="139"/>
         <Loaded Value="True"/>
@@ -44,8 +43,9 @@
         <ComponentName Value="Form_setup"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <CursorPos X="20" Y="46"/>
+        <CursorPos X="3" Y="41"/>
         <UsageCount Value="139"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -65,7 +65,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="7"/>
-        <CursorPos X="18" Y="43"/>
+        <CursorPos X="33" Y="50"/>
         <UsageCount Value="139"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -202,7 +202,7 @@
         <UsageCount Value="8"/>
       </Unit21>
       <Unit22>
-        <Filename Value="..\..\capture\capture\Unit_mycapture.pas"/>
+        <Filename Value="C:\capture\capture\Unit_mycapture.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="76"/>
         <CursorPos X="44" Y="143"/>
@@ -218,121 +218,122 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="unit_other.pas"/>
-      </Position1>
-      <Position2>
-        <Filename Value="unit_dm.pas"/>
-        <Caret Line="32"/>
-      </Position2>
-      <Position3>
-        <Filename Value="unit_dm.pas"/>
-        <Caret Line="78" Column="48"/>
-      </Position3>
-      <Position4>
         <Filename Value="project1.lpr"/>
         <Caret Line="23" Column="35"/>
-      </Position4>
-      <Position5>
+      </Position1>
+      <Position2>
         <Filename Value="unit_setup.pas"/>
         <Caret Line="43" Column="23"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit_setup.pas"/>
+        <Caret Line="45" Column="3"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit_dm.pas"/>
+        <Caret Line="67" Column="72"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit_dm.pas"/>
+        <Caret Line="78"/>
       </Position5>
       <Position6>
         <Filename Value="unit_setup.pas"/>
-        <Caret Line="45" Column="3"/>
+        <Caret Line="9" Column="20"/>
       </Position6>
       <Position7>
         <Filename Value="unit_dm.pas"/>
-        <Caret Line="67" Column="72"/>
+        <Caret Line="18" Column="49"/>
       </Position7>
       <Position8>
-        <Filename Value="unit_dm.pas"/>
-        <Caret Line="78"/>
+        <Filename Value="unit_other.pas"/>
       </Position8>
       <Position9>
         <Filename Value="unit_setup.pas"/>
         <Caret Line="9" Column="20"/>
       </Position9>
       <Position10>
-        <Filename Value="unit_dm.pas"/>
-        <Caret Line="18" Column="49"/>
+        <Filename Value="unit_docker.pas"/>
+        <Caret Line="82" Column="11"/>
       </Position10>
       <Position11>
-        <Filename Value="unit_other.pas"/>
+        <Filename Value="unit_docker.pas"/>
+        <Caret Line="81" Column="11"/>
       </Position11>
       <Position12>
-        <Filename Value="unit_setup.pas"/>
-        <Caret Line="9" Column="20"/>
+        <Filename Value="unit_docker.pas"/>
+        <Caret Line="73" Column="20" TopLine="28"/>
       </Position12>
       <Position13>
         <Filename Value="unit_docker.pas"/>
-        <Caret Line="82" Column="11"/>
+        <Caret Line="188" Column="36" TopLine="143"/>
       </Position13>
       <Position14>
-        <Filename Value="unit_docker.pas"/>
-        <Caret Line="81" Column="11"/>
-      </Position14>
-      <Position15>
-        <Filename Value="unit_docker.pas"/>
-        <Caret Line="73" Column="20" TopLine="28"/>
-      </Position15>
-      <Position16>
-        <Filename Value="unit_docker.pas"/>
-        <Caret Line="188" Column="36" TopLine="143"/>
-      </Position16>
-      <Position17>
         <Filename Value="unit_dm.pas"/>
         <Caret Line="19" Column="9"/>
-      </Position17>
-      <Position18>
+      </Position14>
+      <Position15>
         <Filename Value="project1.lpr"/>
         <Caret Line="33" Column="5"/>
-      </Position18>
-      <Position19>
+      </Position15>
+      <Position16>
         <Filename Value="unit_about.pas"/>
         <Caret Line="42"/>
-      </Position19>
-      <Position20>
+      </Position16>
+      <Position17>
         <Filename Value="unit_about.pas"/>
         <Caret Line="43"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unit_other.pas"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unit_other.pas"/>
+        <Caret Line="55" Column="35"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unit_other.pas"/>
+        <Caret Line="44" Column="22"/>
       </Position20>
       <Position21>
         <Filename Value="unit_other.pas"/>
+        <Caret Line="56" Column="33"/>
       </Position21>
       <Position22>
-        <Filename Value="unit_other.pas"/>
-        <Caret Line="55" Column="35"/>
-      </Position22>
-      <Position23>
-        <Filename Value="unit_other.pas"/>
-        <Caret Line="44" Column="22"/>
-      </Position23>
-      <Position24>
-        <Filename Value="unit_other.pas"/>
-        <Caret Line="56" Column="33"/>
-      </Position24>
-      <Position25>
         <Filename Value="unit_docker.pas"/>
         <Caret Line="229" Column="43" TopLine="157"/>
-      </Position25>
-      <Position26>
+      </Position22>
+      <Position23>
         <Filename Value="unit_docker.pas"/>
         <Caret Line="120" Column="27" TopLine="61"/>
-      </Position26>
-      <Position27>
+      </Position23>
+      <Position24>
         <Filename Value="unit_docker.pas"/>
         <Caret Line="121" Column="12" TopLine="76"/>
-      </Position27>
-      <Position28>
+      </Position24>
+      <Position25>
         <Filename Value="unit_help.pas"/>
         <Caret Line="20" Column="9"/>
-      </Position28>
-      <Position29>
+      </Position25>
+      <Position26>
         <Filename Value="unit_help.pas"/>
         <Caret Line="21" Column="9"/>
-      </Position29>
-      <Position30>
+      </Position26>
+      <Position27>
         <Filename Value="unit_help.pas"/>
         <Caret Line="20" Column="9"/>
+      </Position27>
+      <Position28>
+        <Filename Value="unit_setup.pas"/>
+        <Caret Line="43" Column="29"/>
+      </Position28>
+      <Position29>
+        <Filename Value="unit_setup.pas"/>
+        <Caret Line="42" Column="3"/>
+      </Position29>
+      <Position30>
+        <Filename Value="unit_setup.pas"/>
+        <Caret Line="41" Column="3"/>
       </Position30>
     </JumpHistory>
     <RunParams>
