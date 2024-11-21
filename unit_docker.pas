@@ -85,6 +85,7 @@ implementation
 
 {$R *.lfm}
 
+// 不使用 DM
 uses unit_main, unit_other, unit_setup, unit_help, unit_about;
 
 procedure TForm_docker.HideShape;
@@ -223,6 +224,7 @@ begin
   Application.Title := Self.Caption;
   ShowPanel(Form_other, Form_other.Panel1);
   Shape2.Visible := True;
+
   Form_other.ShowMyself; // 运行 ShowMyself 过程
 end;
 

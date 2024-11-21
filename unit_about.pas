@@ -23,9 +23,11 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    Label7: TLabel;
     Label_name: TLabel;
     Label_product: TLabel;
     Label_version: TLabel;
+    Label_version1: TLabel;
     procedure FormCreate(Sender: TObject);
   private
 

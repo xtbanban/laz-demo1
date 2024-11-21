@@ -38,14 +38,14 @@ object Form_about: TForm_about
   object Label_version: TLabel
     Left = 88
     Height = 20
-    Top = 81
+    Top = 112
     Width = 85
     Caption = 'V2024.1.1.0'
   end
   object Label4: TLabel
     Left = 32
     Height = 20
-    Top = 81
+    Top = 112
     Width = 45
     Caption = '版本：'
   end
@@ -66,15 +66,29 @@ object Form_about: TForm_about
   object Label5: TLabel
     Left = 33
     Height = 20
-    Top = 113
+    Top = 144
     Width = 45
     Caption = '版权：'
   end
   object Label6: TLabel
     Left = 87
     Height = 20
-    Top = 113
+    Top = 144
     Width = 79
     Caption = 'GPL，LGPL'
+  end
+  object Label_version1: TLabel
+    Left = 89
+    Height = 20
+    Top = 80
+    Width = 143
+    Caption = '88185785@qq.com'
+  end
+  object Label7: TLabel
+    Left = 33
+    Height = 20
+    Top = 80
+    Width = 45
+    Caption = '联系：'
   end
 end
